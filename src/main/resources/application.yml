@@ -1,0 +1,17 @@
+app:
+  resources:
+    logfile:
+      location: classpath:logs/logfile.txt
+
+
+spring:
+  datasource:
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    url: jdbc:hsqldb:hsql://localhost:9001/mydb
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.HSQLDialect
+    show-sql: false
+    hibernate:
+      ddl-auto: update
